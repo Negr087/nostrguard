@@ -74,6 +74,7 @@ npm run build
 
 ## Project Structure
 nostrguard/
+
      src/
         background/      Background scripts
         content/         Content scripts
