@@ -1,0 +1,19 @@
+/* Estilos para nostr-login */
+.nl-container {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Personalizar colores si es necesario */
+:root {
+  --nl-primary-color: #8b5cf6;
+  --nl-background-color: #ffffff;
+  --nl-text-color: #1f2937;
+}
+
+/* Para modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nl-background-color: #111827;
+    --nl-text-color: #f9fafb;
+  }
+}

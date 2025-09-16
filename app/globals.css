@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color tokens from green to purple theme */
+  --background: #ffffff;
+  --foreground: #374151;
+  --card: #faf5ff;
+  --card-foreground: #374151;
+  --popover: #ffffff;
+  --popover-foreground: #374151;
+  --primary: #7c3aed;
+  --primary-foreground: #ffffff;
+  --secondary: #a855f7;
+  --secondary-foreground: #374151;
+  --muted: #faf5ff;
+  --muted-foreground: #374151;
+  --accent: #a855f7;
+  --accent-foreground: #374151;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e5e7eb;
+  --input: #ffffff;
+  --ring: rgba(124, 58, 237, 0.6);
+  --chart-1: #7c3aed;
+  --chart-2: #a855f7;
+  --chart-3: #dc2626;
+  --chart-4: #d97706;
+  --chart-5: #f59e0b;
+  --radius: 0.5rem;
+  --sidebar: #faf5ff;
+  --sidebar-foreground: #374151;
+  --sidebar-primary: #7c3aed;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #a855f7;
+  --sidebar-accent-foreground: #374151;
+  --sidebar-border: #e5e7eb;
+  --sidebar-ring: rgba(124, 58, 237, 0.6);
+}
+
+.dark {
+  /* Updated dark mode tokens with purple theme and set as default */
+  --background: #0f0a1a;
+  --foreground: #f1f5f9;
+  --card: #1e1b31;
+  --card-foreground: #f1f5f9;
+  --popover: #0f0a1a;
+  --popover-foreground: #f1f5f9;
+  --primary: #8b5cf6;
+  --primary-foreground: #0f0a1a;
+  --secondary: #a855f7;
+  --secondary-foreground: #0f0a1a;
+  --muted: #1e1b31;
+  --muted-foreground: #94a3b8;
+  --accent: #a855f7;
+  --accent-foreground: #0f0a1a;
+  --destructive: #ef4444;
+  --destructive-foreground: #f1f5f9;
+  --border: #2d2438;
+  --input: #1e1b31;
+  --ring: rgba(139, 92, 246, 0.6);
+  --chart-1: #8b5cf6;
+  --chart-2: #a855f7;
+  --chart-3: #ef4444;
+  --chart-4: #f97316;
+  --chart-5: #eab308;
+  --radius: 0.5rem;
+  --sidebar: #1e1b31;
+  --sidebar-foreground: #f1f5f9;
+  --sidebar-primary: #8b5cf6;
+  --sidebar-primary-foreground: #0f0a1a;
+  --sidebar-accent: #a855f7;
+  --sidebar-accent-foreground: #0f0a1a;
+  --sidebar-border: #2d2438;
+  --sidebar-ring: rgba(139, 92, 246, 0.6);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+/* Fix definitivo para nostr-login 1.7.11 modal transparente */
+/* Selector para el overlay del modal */
+[style*="position: fixed"][style*="inset: 0"][style*="z-index"] {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Selector para el contenido del modal */
+[style*="position: fixed"] > div[style*="background"],
+[style*="position: fixed"] [style*="background: white"],
+[style*="position: fixed"] [style*="background: rgb(255, 255, 255)"] {
+  background: white !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Forzar opacidad completa */
+[style*="position: fixed"] * {
+  opacity: 1 !important;
+}

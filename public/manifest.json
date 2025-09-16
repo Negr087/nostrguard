@@ -1,0 +1,19 @@
+{
+  "name": "NostrGuard",
+  "short_name": "NostrGuard",
+  "description": "Protect yourself from scammers on Nostr with curated block lists",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "protocol_handlers": [
+    {
+      "protocol": "nostr+login",
+      "url": "/nostr-auth?url=%s"
+    },
+    {
+      "protocol": "nostr",
+      "url": "/nostr-auth?url=%s"
+    }
+  ]
+}
