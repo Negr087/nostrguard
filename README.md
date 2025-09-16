@@ -35,10 +35,10 @@ Your private key never leaves your extension. Full control over your data with c
 
 ### Setup
 
-1 Click the NostrGuard icon in your browser toolbar
-2 Click the "Nostr login button" in the top right to connect
-3 The login bubble will appear automatically
-4 Start protecting your Nostr experience!
+1- Click the NostrGuard icon in your browser toolbar
+2- Click the "Nostr login button" in the top right to connect
+3- The login bubble will appear automatically
+4- Start protecting your Nostr experience!
 
 ## 📱 How It Works
 NostrGuard integrates seamlessly with your Nostr client to provide:
