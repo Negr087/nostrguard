@@ -1,4 +1,4 @@
-NostrGuard 🛡️
+# NostrGuard 🛡️
 <img width="1590" height="922" alt="Screenshot_19" src="https://github.com/user-attachments/assets/327560ac-4cc2-4dd7-96b8-398d7c3998ad" />
 Protect your Nostr experience from scammers
 
