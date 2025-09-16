@@ -15,7 +15,7 @@ Your private key never leaves your extension. Full control over your data with c
 ## 🚀 Getting Started
 ### Installation
 
-* Chrome/Edge/Brave:
+1 Chrome/Edge/Brave:
 
 - Download the latest release from Releases
 - Unzip the file
@@ -24,7 +24,7 @@ Your private key never leaves your extension. Full control over your data with c
 - Click "Load unpacked" and select the unzipped folder
 
 
-* Firefox:
+2 Firefox:
 
 - Download the .xpi file from Releases
 - Open Firefox and go to about:addons
