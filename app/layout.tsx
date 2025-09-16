@@ -12,19 +12,13 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "NostrGuard - Block Scammers on Nostr",
+  title: "NostrGuard",
   description: "Protect yourself from scammers on Nostr with curated block lists",
   generator: 'v0.app',
   icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
-  },
+  icon: '/favicon.png',
+  shortcut: '/favicon.png',
+},
   other: {
     'nostr:nip-05': 'negr0@hodl.ar',
     'nostr:pubkey': 'npub1yrffsyxk5hujkpz6mcpwhwkujqmdwswvdp4sqs2ug26zxmly45hsfpn8p0',
