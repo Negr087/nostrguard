@@ -16,19 +16,22 @@ export const metadata: Metadata = {
   description: "Protect yourself from scammers on Nostr with curated block lists",
   generator: 'v0.app',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-icon.png',
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
-  // Agregar los meta tags de Nostr aquí
   other: {
     'nostr:nip-05': 'negr0@hodl.ar',
-    // Reemplaza este valor con tu clave pública de Nostr
-    'nostr:pubkey': 'npub1yrffsyxk5hujkpz6mcpwhwkujqmdwswvdp4sqs2ug26zxmly45hsfpn8p0', // Tu clave pública de Nostr
- 'mobile-web-app-capable': 'yes',
+    'nostr:pubkey': 'npub1yrffsyxk5hujkpz6mcpwhwkujqmdwswvdp4sqs2ug26zxmly45hsfpn8p0',
+    'mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black',
   },
-  // Opcional: Agregar protocolos para deep linking
   manifest: '/manifest.json',
 }
 
